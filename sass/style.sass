@@ -106,13 +106,13 @@ body
     justify-content: space-between
     flex-wrap: wrap
     margin-bottom: 50px
-.film-table span
-    flex-basis: 25%
-.film-table :nth-child(even)
+.film-table div
+    flex-basis: 50%
+.film-table div :nth-child(even)
     font-size: 16px
     line-height: 19px
     color: inherit
-.film-table :nth-child(odd)
+.film-table div :nth-child(odd)
     font-weight: bold
     font-size: 16px
     line-height: 19px
@@ -182,3 +182,187 @@ body
     font-size: 10px
     line-height: 19px
     color: #A5A5A5
+.new-cards
+    background: #F3F3F3
+    padding-top: 100px
+    padding-bottom: 100px
+.new
+    font-size: 24px
+    line-height: 28px
+    color: #000000
+    font-weight: 900
+    //margin-bottom: 65px
+.cards
+    display: flex
+    margin-top: 65px
+    justify-content: space-between
+.card
+    background: #FFFFFF
+    border-radius: 5px
+    margin-bottom: 65px
+    padding: 30px 30px 52px 30px
+.date
+    margin: 0px
+    font-size: 14px
+    line-height: 16px
+    color: #000000
+    margin-bottom: 14px
+    font-weight: normal
+    text-align: center
+.card p 
+    margin: 0px
+    width: 200px
+    font-weight: 900
+    font-size: 14px
+    line-height: 16px
+    color: #000000
+    float: left
+.mobil-button
+    display: none
+.mobil-button button
+    border: none
+    background: none
+    cursor: pointer
+    margin-right: 30px
+
+@media (max-width: 1200px)
+    .container
+        max-width: 990px
+    .search-input
+        margin-left: 0
+    .menu
+        margin-right: 0
+    .film 
+        margin-top: 60px
+    .film-text p 
+        margin-top: 16px
+        margin-bottom: 25px
+    .film-table
+        margin-bottom: 25px
+    .percent 
+        padding: 25px 20px
+    .actor img
+        width: 80px
+        height: 80px
+    .actor div 
+        margin-left: 10px
+    .sostav 
+        margin-top: 30px
+        padding-bottom: 60px
+    .new-cards 
+        padding-top: 50px
+        padding-bottom: 30px
+    .cards
+        flex-wrap: wrap
+        justify-content: center
+    .card
+        flex-basis: 30%
+        margin-right: 20px
+        margin-bottom: 20px
+    .sign-up
+        padding: 10px 17px
+    .sign-in
+        padding: 10px 17px
+    .new
+        display: flex
+        justify-content: center
+
+@media (max-width: 992px)    
+    .container
+        max-width: 700px
+    .header
+        padding-left: 28px
+        height: 65px
+    .line
+        margin-left: 0px
+    .search-input
+        display: none
+    .sign-up
+        padding-lefy: 10px
+        padding-rigth: 10px
+    .sign-in
+        padding-lefy: 10px
+        padding-rigth: 10px
+    .film-text
+        align-self: center
+    .film-text h1
+        font-size: 25px
+        line-height: 25px
+    .film-text p 
+        margin-top: 20px
+        margin-bottom: 10px
+    .film-table div
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+    .actor
+        flex-basis: 50%
+    .actors :nth-child(odd)
+        justify-content: flex-start
+    .actors :nth-child(even)
+        justify-content: flex-end
+    .actors :nth-child(even) div
+        order: -1
+    .actors :nth-child(even) img
+        margin-left: 21px
+    .new
+        display: flex
+        justify-content: center
+
+@media (max-width: 768px)
+    .sostav .container
+        max-width: 500px 
+    .film .container
+        max-width: 600px 
+    .film
+        margin-top: 30px
+        margin-bottom: 30px
+    .film-box
+        flex-direction: column
+    .trailer-box
+        width: 50%
+        margin-bottom: 30px
+        margin-left: 120px
+    .film-text
+        //order: -1
+        margin-left: 0px
+    .trailer-img
+        width: 300px
+
+    .trailer-container
+        width: 120px
+        padding: 25px 89px 25px 89px
+    .sign-up
+       display: none
+    .sign-in
+        display: none
+    .menu
+        display: none
+    .line
+        display: none
+    .mobil-button
+        display: inline-block
+    
+@media (max-width: 576px) 
+    .sostav .container
+        max-width: 300px 
+    .film .container
+        max-width: 300px 
+    .actors
+        flex-direction: column
+        align-items: flex-start
+    .actors :nth-child(even) div
+        order: 1
+    .actors :nth-child(even) img
+        margin-left: 0
+    .film
+        margin-top: 30px
+        margin-bottom: 30px
+    .trailer-box
+        //margin-bottom: 30px
+        margin-left:0px
+    .trailer-img
+        width: 300px
+    .trailer-container
+        width: 120px
+        padding: 25px 89px 25px 89px
