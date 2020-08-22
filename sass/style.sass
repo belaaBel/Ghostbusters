@@ -293,6 +293,11 @@ body
         height: 80px
     .actor div 
         margin-left: 10px
+    .cast img
+        width: 80px
+        height: 80px
+    .cast div 
+        margin-left: 10px
     .sostav 
         margin-top: 30px
         padding-bottom: 60px
@@ -361,6 +366,18 @@ body
     .actors :nth-child(even) div
         order: -1
     .actors :nth-child(even) img
+        margin-left: 21px
+
+
+    .cast
+        flex-basis: 50%
+    .casts :nth-child(odd)
+        justify-content: flex-start
+    .casts :nth-child(even)
+        justify-content: flex-end
+    .casts :nth-child(even) div
+        order: -1
+    .casts :nth-child(even) img
         margin-left: 21px
     // .new
     //     display: flex
@@ -471,6 +488,13 @@ body
     .actors :nth-child(even) div
         order: 1
     .actors :nth-child(even) img
+        margin-left: 0
+    .casts
+        flex-direction: column
+        align-items: flex-start
+    .casts :nth-child(even) div
+        order: 1
+    .casts :nth-child(even) img
         margin-left: 0
     .film
         margin-top: 30px
