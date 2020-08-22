@@ -18,10 +18,13 @@ $(document).ready(function () {
 });
 
 var mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
+    slidesPerView: 1,
     loop: true,
     spaceBetween: 10,
     breakpoints: {
+        1200:{
+            slidesPerView: 4,
+        },
         992: {
             slidesPerView: 4,
         },
@@ -36,6 +39,9 @@ var mySwiper = new Swiper('.swiper-container', {
         },
         376: {
             slidesPerView: 1,
+            navigation: {
+                nextEl: ".next-button",
+            }
         }
     }
 });

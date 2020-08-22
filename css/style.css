@@ -558,16 +558,12 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .next-button {
-    display: inline;
-  }
-
   .new {
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   .swiper-slide-active {
-    margin-left: 40px;
+    margin-left: 10px;
   }
 
   .swiper-container {
@@ -684,14 +680,6 @@ body {
 
   .mobil-button {
     display: inline-block;
-  }
-
-  .card {
-    width: 260px;
-  }
-
-  .swiper-container {
-    margin-left: 20px;
   }
 }
 @media (max-width: 576px) {
